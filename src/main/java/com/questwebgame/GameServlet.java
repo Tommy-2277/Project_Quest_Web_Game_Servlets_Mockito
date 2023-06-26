@@ -34,7 +34,7 @@ public class GameServlet extends HttpServlet {
             req.setAttribute("answers", answers);
             RequestDispatcher dispatcher = req.getRequestDispatcher("/game.jsp");
             dispatcher.forward(req, resp);
-        } else if (questionNumber == questions.size()){
+        } else if (questionNumber == questions.size()) {
             winOrLose(req, resp, true);
         }
     }

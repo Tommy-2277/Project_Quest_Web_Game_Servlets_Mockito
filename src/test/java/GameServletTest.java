@@ -1,6 +1,7 @@
 import com.questwebgame.GameServlet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+
 import static org.mockito.Mockito.*;
 
 public class GameServletTest {

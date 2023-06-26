@@ -11,39 +11,44 @@
 <html>
 <head>
     <title>Game Homeless</title>
-    <%@ page contentType="text/html;charset=UTF-8"%>
-    <% if(GameServlet.getQuestionNumber() == 0) { %>
+    <%@ page contentType="text/html;charset=UTF-8" %>
+    <% if (GameServlet.getQuestionNumber() == 0) { %>
     <link rel="stylesheet" type="text/css" href="/css/firstQuestion.css">
-    <% } if (GameServlet.getQuestionNumber() == 1) { %>
+    <% }
+        if (GameServlet.getQuestionNumber() == 1) { %>
     <link rel="stylesheet" type="text/css" href="/css/secondQuestion.css">
-    <% } if (GameServlet.getQuestionNumber() == 2) { %>
+    <% }
+        if (GameServlet.getQuestionNumber() == 2) { %>
     <link rel="stylesheet" type="text/css" href="/css/thirdQuestion.css">
-    <% } if (GameServlet.getQuestionNumber() == 3) { %>
+    <% }
+        if (GameServlet.getQuestionNumber() == 3) { %>
     <link rel="stylesheet" type="text/css" href="/css/fourthQuestion.css">
-    <% } if (GameServlet.getQuestionNumber() == 4) { %>
+    <% }
+        if (GameServlet.getQuestionNumber() == 4) { %>
     <link rel="stylesheet" type="text/css" href="/css/fifthQuestion.css">
     <% } %>
 </head>
 
 
 <body>
-<%String ipAddress = request.getHeader("X-FORWARDED-FOR");
+<%
+    String ipAddress = request.getHeader("X-FORWARDED-FOR");
     if (ipAddress == null) {
         ipAddress = request.getRemoteAddr();
     }
 %>
 <div>
-<h3>${question}</h3>
+    <h3>${question}</h3>
 
-<form id="answersForm" method="post" action="${pageContext.request.contextPath}/ProjectQuestWebGame/game">
-    <c:forEach var="answer" items="${answers}">
-        <input type="radio" name="answer" value="${answer}">
-        <label>${answer}</label>
+    <form id="answersForm" method="post" action="${pageContext.request.contextPath}/ProjectQuestWebGame/game">
+        <c:forEach var="answer" items="${answers}">
+            <input type="radio" name="answer" value="${answer}">
+            <label>${answer}</label>
+            <br>
+        </c:forEach>
         <br>
-    </c:forEach>
-    <br>
-    <input type="submit" value="Дальше" style="display: block; margin: 0 auto;">
-</form>
+        <input type="submit" value="Дальше" style="display: block; margin: 0 auto;">
+    </form>
 </div>
 <div id="stats">
     <span>Статистика:</span>
