@@ -1,0 +1,20 @@
+body {
+    background-image: url("/images/minions.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #FFB32E;
+    text-shadow: 0 0 10px #FFB32E;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #FFB32E;
+    border-radius: 12px;
+    font-size: 20px;
+}

@@ -1,0 +1,28 @@
+body {
+    background-image: url("/images/lose.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1 {
+    /*text-align: center;*/
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: darkgray;
+    text-shadow: 0 0 10px darkgray;
+}
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin: 0 auto;
+    background-color: darkgray;
+    border-radius: 12px;
+    font-size: 20px;
+}

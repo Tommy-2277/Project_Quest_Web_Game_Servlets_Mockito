@@ -1,0 +1,35 @@
+body {
+    background-image: url("/images/fifthQuestion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1 {
+    text-align: center;
+    color: #FFB32E;
+    text-shadow: 0 0 3px #FFB32E;
+}
+form {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+label {
+    color: antiquewhite;
+    font-size: 25px;
+}
+input[type="submit"] {
+    background-color: #FFB32E;
+}
+#stats {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: crimson;
+}
