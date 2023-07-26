@@ -28,7 +28,7 @@
 %>
 <div id="container">
     <div><h3>${question}</h3></div>
-<%--    <form id="answersForm" method="post" action="${pageContext.request.contextPath}/ProjectQuestWebGame/game">--%>
+
     <div>
     <form method="post" action="${pageContext.request.contextPath}/ProjectQuestWebGame/game">
         <c:forEach var="answer" items="${answers}">
