@@ -1,24 +1,57 @@
+/*body {*/
+/*    background-image: url("/images/firstPage.gif");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-attachment: fixed;*/
+/*    font-family: "Unispace", Arial, sans-serif;*/
+/*}*/
+/*h1 {*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*    -webkit-text-stroke: 2px #000000;*/
+/*    text-stroke: 2px #000000;*/
+/*}*/
+/*form {*/
+/*    width: 7%;*/
+/*    margin: auto;*/
+/*}*/
+/*button {*/
+/*border-radius: 12px;*/
+/*background-color: blueviolet;*/
+/*color: white;*/
+/*padding: 10px;*/
+/*font-size: 25px;*/
+/*}*/
+
 body {
     background-image: url("/images/firstPage.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: "Unispace", Arial, sans-serif;
 }
+
 h1 {
     text-align: center;
     color: white;
     -webkit-text-stroke: 2px #000000;
     text-stroke: 2px #000000;
 }
+
 form {
-    width: 7%;
-    margin: auto;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
+
 button {
-border-radius: 12px;
-background-color: blueviolet;
-color: white;
-padding: 10px;
-font-size: 25px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
 }
